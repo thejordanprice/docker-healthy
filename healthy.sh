@@ -1,6 +1,17 @@
 #!/bin/bash
 PATH=/usr/bin:/bin
 
+# Example vars
+# an array
+Unix=('Debian' 'Red hat' 'Ubuntu' 'Suse' 'Fedora' 'UTS' 'OpenLinux');
+Unix=("${Unix[@]}" "AIX" "HP-UX")
+echo ${Unix[7]}
+# just showing how they work...
+# you also don't need to declare strings or int/float..
+# just do Unix= 1;
+# then to reference that array as you can see you must add $...
+# like $Unix to get it even though you didn't type it to set it.
+
 function Checks {
   ## CONTAINER CHECKS
 
